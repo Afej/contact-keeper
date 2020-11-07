@@ -1,14 +1,20 @@
 import React from "react";
-import PropTypes from "prop-types";
+import ContactFilter from "../contacts/ContactFilter";
+import ContactForm from "../contacts/ContactForm";
+import Contacts from "../contacts/Contacts";
 
-const Home = (props) => {
+const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="grid-2">
+      <div>
+        <ContactForm />
+      </div>
+      <div>
+        <ContactFilter />
+        <Contacts />
+      </div>
     </div>
   );
 };
-
-Home.propTypes = {};
 
 export default Home;
