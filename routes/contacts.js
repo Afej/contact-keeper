@@ -57,15 +57,15 @@ router.post(
 // @route   PUT api/contacts/:id
 // @desc   update contact
 // @access   private
-router.put("/", auth, (req, res) => {
-  res.send("update conatcs");
+router.put("/:id", auth, (req, res) => {
+  res.send("update contact");
 });
 
 // @route   DELETE api/contacts
 // @desc   delete contacts
 // @access   private
-router.delete("/", auth, (req, res) => {
-  res.send("delete conatcs");
+router.delete("/:id", auth, (req, res) => {
+  res.send("Contact deleted");
 });
 
 module.exports = router;
